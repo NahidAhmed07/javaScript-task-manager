@@ -10,10 +10,16 @@ const modalInput = getTag("modal-input");
 
 getTag("add-task").addEventListener("click", () => {
     const inputvalue = getTag("task-field");
-    const task = createTask(inputvalue.value);
-    taskParent.appendChild(task);
-    inputvalue.value = "";
-    updateCounter();
+    if (inputvalue.value == '') {
+        inputvalue.style.border = '2px solid red'
+    } else {
+        inputvalue.style.border = 'none'
+        const task = createTask(inputvalue.value);
+        taskParent.appendChild(task);
+        inputvalue.value = "";
+        updateCounter();
+    }
+    
 });
 
 // done and color btn functionality

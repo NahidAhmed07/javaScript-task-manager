@@ -41,3 +41,24 @@ body{
     margin: 0 auto;
     background: #dddbdb;
 }
+#modal-input{
+    background: #d3d3d3;
+}
+
+#modal-input:focus{
+    outline: none;
+
+}
+
+@media only screen and (max-width:540px) {
+    .modal-body{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    .modal-body{
+        width: 50%;
+    }
+    
+}
