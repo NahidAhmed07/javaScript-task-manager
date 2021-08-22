@@ -1,0 +1,43 @@
+body{
+    background: #424242;
+    /* opacity: 0.5; */
+}
+
+.single-task{
+    background: #525252;
+    border: 10px solid #424242  ;
+}
+
+.control-div{
+    background: #5d5d5d;
+    padding: 8px;
+}
+
+.color-span{
+    padding: 15px 18px;
+}
+
+.task-text{
+    letter-spacing: px;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.623);
+    z-index: 1;
+    overflow: auto;
+    padding-top: 150px;
+
+}
+.modal-body{
+    width: 25%;
+    margin: 0 auto;
+    background: #dddbdb;
+}
